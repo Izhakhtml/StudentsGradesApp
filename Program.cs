@@ -15,8 +15,8 @@ void printFromFile(string name)
     using(StreamReader reader = new StreamReader(fs))
     {
         string part = reader.ReadLine();
-        int x = part.IndexOf("NAME");
-        int y = part.IndexOf("");
+        int x = part.IndexOf("");
+        int y = part.IndexOf("TAZ");
         Console.WriteLine(part.Substring(x,y));
     }
 }
